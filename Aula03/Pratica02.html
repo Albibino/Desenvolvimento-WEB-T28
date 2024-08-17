@@ -9,7 +9,7 @@
         <meta name="description" content="Pratica 01 para desenvolvimento web 1">
         <meta name="keywords" content="Bio, Desenvolvimento WEB, BSN, UNIDAVI, T28, html">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -17,53 +17,68 @@
         </header>
         <main>
             <form action="cadastro.php" method="post">
-                <fieldset>
-                    <legend>Cadastro</legend>
-                    <ul>
-                        <li> 
-                            <label for="nome_cadastro">Nome:</label>    
-                            <input type="text" id="nome_cadastro" maxlength="100" required>    
-                        </li>
-                        <li>
-                            <label for="sobrenome_cadastro">Sobrenome:</label>
-                            <input type="text" id="sobrenome_cadastro" maxlength="100" required>
-                        </li>
-                        <li>
-                            <label for="email_cadastro"></label>
-                            <input type="email" id="email_cadastro" required>
-                        </li>
-                        <li>
-                            <label for="data_nascimento_cadastro">Data de nascimento:</label>
-                            <input type="date" id="data_nascimento_cadastro" min="01/01/1920" max="01/01/2024" required>
-                        </li>
-                        <li>
-                            <label for="sexo">Sexo:</label>
-                            <label for="sexo_masculino_cadastro">Masculino</label>
-                            <input type="radio" id="sexo_masculino_cadastro" name="sexo" value="1">
-                            <label for="sexo_feminino_cadastro">Feminino</label>
-                            <input type="radio" id="sexo_feminino_cadastro" name="sexo" value="2">
-                        </li>
-                        <li>
-                            <label for="endereço_cadastro">Endereço:</label>
-                            <input type="text" id="endereço_cadastro" maxlength="200" required>
-                        </li>
-                        <li>
-                            <label for="cep_cadastro">CEP:</label>
-                            <input type="text" id="cep_cadastro" maxlength="10" required>
-                        </li>
-                        <li>
-                            <label for="cor_cadastro">Cor favorita:</label>
-                            <input type="color">
-                        </li>
-                        <li>
-                            <label for="estado_cadastro">Estado:</label>
-                            <select name="estado_cadastro" id="estados">
-                                <option value="1">Santa Catarina</option>
-                                <option value="2">Paraná</option>
-                                <option value="3">Rio Grande do Sul</option>
-                            </select>
-                        </li>
-                    </ul>
+                <fieldset id="bloco_1_ex">                  
+                    <legend>Cadastro</legend>                   
+                    <div class="bloco_1">
+                        <ul>
+                            <li> 
+                                <label for="nome_cadastro">Nome:</label>    
+                                <input type="text" id="nome_cadastro" maxlength="100" required>    
+                            </li>
+                            <li>
+                                <label for="sobrenome_cadastro">Sobrenome:</label>
+                                <input type="text" id="sobrenome_cadastro" maxlength="100" required>
+                            </li>
+                            <li>
+                                <label for="email_cadastro">Email:</label>
+                                <input type="email" id="email_cadastro" required>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="bloco_2">
+                        <ul>
+                            <li>
+                                <label for="data_nascimento_cadastro">Data de nascimento:</label>
+                                <input type="date" id="data_nascimento_cadastro" min="01/01/1920" max="01/01/2024" required>
+                            </li>
+                            <li>
+                                <label for="sexo">Sexo:</label>
+                                <label for="sexo_masculino_cadastro">Masculino</label>
+                                <input type="radio" id="sexo_masculino_cadastro" name="sexo" value="1">
+                                <label for="sexo_feminino_cadastro">Feminino</label>
+                                <input type="radio" id="sexo_feminino_cadastro" name="sexo" value="2">
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="bloco_3">
+                        <ul>
+                            <li>
+                                <label for="endereço_cadastro">Endereço:</label>
+                                <input type="text" id="endereço_cadastro" maxlength="200" required>
+                            </li>
+                            <li>
+                                <label for="cep_cadastro">CEP:</label>
+                                <input type="text" id="cep_cadastro" maxlength="10" required>
+                            </li>
+                            <li>
+                                <label for="cor_cadastro">Cor favorita:</label>
+                                <input type="color">
+                            </li>
+                            <li>
+                                <label for="estado_cadastro">Estado:</label>
+                                <select name="estado_cadastro" id="estados">
+                                    <option value="1">Santa Catarina</option>
+                                    <option value="2">Paraná</option>
+                                    <option value="3">Rio Grande do Sul</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <button type="submit" id="botao_enviar_cadastro">Enviar</button>
+                    <button type="reset" id="botao_limpar_cadastro">Limpar</button>
                 </fieldset>
             </form>
         </main>        
