@@ -1,14 +1,6 @@
 let opt = document.querySelector("#operacoes");
 let btn = document.getElementById("resultado");
 
-function getValue1() {
-  return parseFloat(document.getElementById("PriVal").value);
-}
-
-function getValue2() {
-  return parseFloat(document.getElementById("SegVal").value);
-}
-
 function getCalc() {
   let result;
   switch (opt.value) {
@@ -29,6 +21,14 @@ function getCalc() {
     break;
   }
   document.getElementById("resultado").innerHTML = result;
+}
+
+function getValue1() {
+  return parseFloat(document.getElementById("PriVal").value);
+}
+
+function getValue2() {
+  return parseFloat(document.getElementById("SegVal").value);
 }
 
 function som() {
