@@ -21,6 +21,7 @@ function getCalc() {
     break;
   }
   document.getElementById("resultado").innerHTML = result;
+  
 }
 
 function getValue1() {
