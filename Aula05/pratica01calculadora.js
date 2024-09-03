@@ -21,7 +21,13 @@ function getCalc() {
     break;
   }
   document.getElementById("resultado").innerHTML = result;
-  
+  if (result < 0 ) {
+    document.getElementById("resultado").style.background = "red"
+  } 
+  else if (result > 0)
+    document.getElementById("resultado").style.background = "green"
+  else
+    document.getElementById("resultado").style.background =  "#808080" 
 }
 
 function getValue1() {
